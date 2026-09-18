@@ -1,0 +1,25 @@
+### GET alle Todos
+GET http://localhost:3000/todos
+
+
+### POST neues Todo
+POST http://localhost:3000/todos
+Content-Type: application/json
+
+{
+  "title": "HTTP Test Task",
+  "dueDate": "09/09/2026",
+  "completed": false
+}
+
+
+### PUT Todo
+PUT http://localhost:3000/todos/6aa160d7e62fcd613173eecc
+Content-Type: application/json
+
+{
+  "completed": true
+}
+
+### DELETE Todo
+DELETE http://localhost:3000/todos/6aa160d7e62fcd613173eecc
